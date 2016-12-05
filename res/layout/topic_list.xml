@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:background="#ffffff"
+    android:id="@+id/topicListBG">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Topic Title"
+        android:id="@+id/topicTitle"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@+id/topicLoveCount"
+        android:layout_marginRight="15dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/topicLoveCount"
+        android:layout_alignBottom="@+id/butLove"
+        android:layout_toStartOf="@+id/butLove"
+        android:layout_marginRight="2dp" />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/butLove"
+        android:background="@drawable/love_topic"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#aaaaaa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Firstname Lastname"
+        android:id="@+id/topicPoster"
+        android:textColor="#0000ff"
+        android:layout_below="@+id/groupPath"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date"
+        android:id="@+id/topicDate"
+        android:textStyle="italic"
+        android:layout_below="@+id/groupPath"
+        android:layout_alignEnd="@+id/butLove" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="/group"
+        android:id="@+id/groupPath"
+        android:textColor="#ffa500"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_below="@+id/topicTitle"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="flag"
+        android:id="@+id/flagTopic"
+        android:layout_below="@+id/topicPoster"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="delete"
+        android:id="@+id/deleteTopic"
+        android:layout_below="@+id/topicPoster"
+        android:layout_toEndOf="@+id/flagTopic"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="pin"
+        android:id="@+id/pinTopic"
+        android:layout_below="@+id/topicPoster"
+        android:layout_toEndOf="@+id/deleteTopic"
+        android:visibility="gone" />
+
+</RelativeLayout>

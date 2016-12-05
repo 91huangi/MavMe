@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Comment Contents"
+        android:id="@+id/commentContent"
+        android:layout_below="@+id/commentPoster"
+        android:layout_alignStart="@+id/commentPoster"
+        android:layout_alignParentEnd="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FirstName LastName"
+        android:id="@+id/commentPoster"
+        android:textColor="#0000ff"
+        android:contextClickable="false"
+        android:textStyle="bold"
+        android:layout_alignParentTop="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date"
+        android:id="@+id/commentDate"
+        android:textStyle="italic"
+        android:layout_alignParentTop="false"
+        android:layout_alignEnd="@+id/commentContent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="flag"
+        android:id="@+id/flagComment"
+        android:layout_below="@+id/commentContent"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="delete"
+        android:id="@+id/delete"
+        android:visibility="invisible"
+        android:layout_below="@+id/commentContent"
+        android:layout_toEndOf="@+id/flagComment"
+        android:layout_marginStart="25dp" />
+</RelativeLayout>

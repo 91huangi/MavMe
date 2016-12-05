@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="#efefef">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupHeading"
+        android:layout_alignParentEnd="false"
+        android:visibility="visible"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Group Name"
+            android:id="@+id/groupTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="/groupPath"
+            android:id="@+id/groupPath"
+            android:layout_below="@+id/groupTitle"
+            android:layout_alignStart="@+id/groupTitle"
+            android:textColor="#ffa500" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/newTopic"
+            android:background="@drawable/new_topic"
+            android:layout_alignStart="@+id/groupPath"
+            android:layout_below="@+id/groupPath"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#aaaaaa" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupHeading"
+        android:id="@+id/pinnedContainer"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:background="#fffdd9"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pinned Topic Title"
+            android:id="@+id/pinnedTitle"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/pin"
+            android:layout_toEndOf="@+id/pin"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pinned Topic Content"
+            android:id="@+id/pinnedContent"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:layout_below="@+id/pinnedTitle"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pinnedContent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="User"
+            android:id="@+id/pinnedUser"
+            android:layout_alignParentStart="false"
+            android:textColor="#0000ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pinnedContent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:id="@+id/pinnedDate"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"
+            android:textColor="#aaaaaa" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/horizBar1"
+            android:background="#dddddd"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pin"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/pin"
+            android:layout_below="@+id/horizBar1"
+            android:backgroundTint="#aaaaaa"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shadow1"
+        android:layout_alignTop="@+id/topicList"
+        android:background="#555555"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background1"
+        android:layout_alignTop="@+id/topicList"
+        android:background="#ffffff"
+        android:layout_margin="10dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topicList"
+        android:layout_below="@+id/divider"
+        android:layout_alignParentEnd="true"
+        android:divider="#efefef"
+        android:dividerHeight="1dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/pinnedContainer"
+        android:id="@+id/horizBar2"
+        android:background="#bbbbbb"
+        android:layout_marginBottom="10dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="◀ PREV"
+        android:id="@+id/pgLeft"
+        android:visibility="visible"
+        android:layout_below="@+id/horizBar2"
+        android:layout_toLeftOf="@+id/divider"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="|"
+        android:id="@+id/divider"
+        android:layout_alignTop="@+id/pgLeft"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NEXT ▶"
+        android:id="@+id/pgRight"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_toEndOf="@+id/divider"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

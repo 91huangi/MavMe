@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This is a test notification message it will automatically span two lines"
+        android:id="@+id/notificationMessage"
+        android:textColor="#000000"
+        android:layout_toLeftOf="@+id/link"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="From Sender on Date"
+        android:id="@+id/notificationSubtitle"
+        android:layout_marginRight="15dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/notificationMessage"
+        android:layout_alignStart="@+id/notificationMessage"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/link"
+        android:background="@drawable/link"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#0000ff"
+        android:layout_marginLeft="5dp" />
+</RelativeLayout>

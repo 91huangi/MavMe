@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="#efefef">
+
+    <TextView
+        android:text="add new group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addGroup"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#ffa500"
+        android:visibility="visible"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shadow1"
+        android:layout_alignTop="@+id/lvExp"
+        android:background="#555555"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background1"
+        android:layout_alignTop="@+id/lvExp"
+        android:background="#ffffff"
+        android:layout_margin="10dp" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addGroup"
+        android:groupIndicator="@null"
+        android:divider="#aaaaaa"
+        android:dividerHeight="1dp"
+        android:childDivider="#aaaaaa"
+        android:background="#ffffff"
+        android:layout_margin="10dp" />
+
+    </RelativeLayout>
+

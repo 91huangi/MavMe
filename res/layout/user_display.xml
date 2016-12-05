@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#efefef">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Name"
+            android:id="@+id/userName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold|italic"
+            android:textColor="#0000ff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/horizBar1"
+            android:layout_below="@+id/userName"
+            android:layout_alignParentStart="true"
+            android:background="#bbbbbb"
+            android:layout_marginTop="15dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizBar1"
+            android:layout_alignStart="@+id/horizBar1"
+            android:id="@+id/profileInfo"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="BASIC INFO"
+                android:id="@+id/heading1"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Gender"
+                android:id="@+id/genderTitle"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Male"
+                android:id="@+id/gender"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Birthday"
+                android:id="@+id/dobTitle"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="1/1/2000"
+                android:id="@+id/dob"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Major"
+                android:id="@+id/majorTitle"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Undecided"
+                android:id="@+id/major"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Degree"
+                android:id="@+id/degreeTitle"
+                android:layout_row="4"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Grad Year"
+                android:id="@+id/graduationTitle"
+                android:layout_row="5"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Bachelors"
+                android:id="@+id/degree"
+                android:layout_row="4"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="2099"
+                android:id="@+id/graduation"
+                android:layout_row="5"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/blank1"
+                android:layout_row="6"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="CONTACT"
+                android:id="@+id/heading2"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Email"
+                android:id="@+id/emailTitle"
+                android:layout_row="8"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="user.name@mavs.uta.edu"
+                android:id="@+id/email"
+                android:layout_row="8"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Phone"
+                android:id="@+id/phoneTitle"
+                android:layout_row="9"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="123-456-7890"
+                android:id="@+id/phone"
+                android:layout_row="9"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Residence"
+                android:id="@+id/residenceTitle"
+                android:layout_row="10"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="On Campus"
+                android:id="@+id/residence"
+                android:layout_row="10"
+                android:layout_column="1" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="User&apos;s profile is set to private"
+            android:id="@+id/privateDisplay"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/profileActions" />
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileActions"
+            android:layout_below="@+id/profileInfo"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ACTIONS"
+                android:id="@+id/heading3"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/addContact"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:background="@drawable/add_contact"
+                android:backgroundTint="#aaaaaa"
+                android:layout_below="@+id/heading3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Save to\nPhone"
+                android:id="@+id/addContactLabel"
+                android:layout_alignParentEnd="false"
+                android:layout_below="@+id/addContact"
+                android:textAlignment="center"
+                android:textColor="#aaaaaa" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/poke"
+                android:layout_alignParentTop="false"
+                android:background="@drawable/poke"
+                android:backgroundTint="#aaaaaa"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/addContact"
+                android:layout_alignStart="@+id/pokeLabel" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Poke"
+                android:id="@+id/pokeLabel"
+                android:layout_below="@+id/poke"
+                android:textAlignment="center"
+                android:textColor="#aaaaaa"
+                android:layout_toEndOf="@+id/addContactLabel"
+                android:layout_marginLeft="5dp" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/block"
+                android:layout_alignParentTop="false"
+                android:background="@drawable/block"
+                android:backgroundTint="#aaaaaa"
+                android:layout_alignTop="@+id/addContact"
+                android:layout_alignStart="@+id/blockLabel"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Block"
+                android:id="@+id/blockLabel"
+                android:layout_below="@+id/block"
+                android:textAlignment="center"
+                android:textColor="#aaaaaa"
+                android:layout_toEndOf="@+id/pokeLabel"
+                android:layout_marginLeft="5dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="(admin)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userName"
+            android:layout_toEndOf="@+id/userName"
+            android:id="@+id/adminLabel"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ff0000"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</ScrollView>

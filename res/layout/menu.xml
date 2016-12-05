@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:weightSum="5"
+    android:paddingTop="5dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/item1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icon1"
+            android:background="@drawable/home"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffa500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/label1"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon1"
+            android:textColor="#ffa500"
+            android:text="Home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/item2">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icon2"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/groups"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffa500" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/label2"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon2"
+            android:textColor="#ffa500"
+            android:text="Groups" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/item3">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icon3"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/search"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffa500" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/label3"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon3"
+            android:textColor="#ffa500"
+            android:text="Search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/item4">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icon4"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffa500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/label4"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon4"
+            android:textColor="#ffa500"
+            android:text="Profile" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/item5">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/icon5"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="false"
+            android:background="@drawable/logout"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffa500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/label5"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon5"
+            android:textColor="#ffa500"
+            android:text="Logout" />
+    </RelativeLayout>
+
+</LinearLayout>
